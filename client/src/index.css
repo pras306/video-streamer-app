@@ -1,0 +1,10 @@
+:root {
+  --color-pink: #FFE8F5;
+  --color-purple-gradient: linear-gradient(to right, #8000FF, #DE00FF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
