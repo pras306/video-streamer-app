@@ -17,10 +17,6 @@ app.get('/stream', (req, res, next) => {
     res.status(200).send("Welcome to stream endpoint");
 });
 
-io.sockets.on('connection', (socket) => {
-    console.log('Connection is made' + socket.id);
-});
-
 io.on('connection', (socket) => {
     viewerCount += 1;
     console.log('a user connected. Total viewer count:', viewerCount);
