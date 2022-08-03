@@ -1,6 +1,42 @@
+@font-face {
+  font-family: 'UBUNTU BOLD';
+  src: url('./assets/fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'UBUNTU MEDIUM';
+  src: url('./assets/fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MERRIWEATHER BLACK';
+  src: url('./assets/fonts/Merriweather/Merriweather-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MERRIWEATHER BOLD';
+  src: url('./assets/fonts/Merriweather/Merriweather-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MERRIWEATHER REGULAR';
+  src: url('./assets/fonts/Merriweather/Merriweather-Regular.ttf') format('truetype');
+}
+
 :root {
   --color-pink: #FFE8F5;
   --color-purple-gradient: linear-gradient(to right, #8000FF, #DE00FF);
+  --color-charcoal: #262223;
+  --color-rose: #DDC6B6;
+  --color-black: #191919;
+  --color-red: #D2302C;
+  --color-white: #F7F7F9;
+  --color-blue: #4285F4;
+  --ff-ubuntu-bold: 'UBUNTU BOLD';
+  --ff-ubuntu-medium: 'UBUNTU MEDIUM';
+  --ff-merriweather-bold: 'MERRIWEATHER BOLD';
+  --ff-merriweather-black: 'MERRIWEATHER BLACK';
+  --ff-merriweather-regular: 'MERRIWEATHER REGULAR';
 }
 
 * {
