@@ -1,0 +1,191 @@
+.app__login {
+    min-width: 40vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 5px 5px var(--color-black);
+    margin: 5rem;
+    padding: 0.75rem;
+}
+
+.app__login-tab {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.75rem 0.75rem 0 0.75rem;
+    border-bottom: 10px solid var(--color-charcoal);
+}
+
+.app__login-tab span {
+    font-family: var(--ff-merriweather-bold);
+    font-size: 1.3em;
+    cursor: pointer;
+    color: var(--color-charcoal);
+    padding: 0.75rem;
+    transition: all 0.4s ease-in;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.app__login-tab span:hover {
+    transform: scale(1.1);
+    background: var(--color-charcoal);
+    color: var(--color-rose);
+}
+
+.active {
+    background: var(--color-rose);
+    cursor: not-allowed !important;
+}
+
+.active:hover {
+    transform: none !important;
+    background: var(--color-rose) !important;
+    color: var(--color-charcoal) !important;
+}
+
+.app__login-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.app__login-input label {
+    padding: 0.75rem;
+    font-family: var(--ff-merriweather-black);
+    font-size: 1.5em;
+}
+
+.app__login-input input {
+    min-width: 20vw;
+    padding: 0.75rem;
+    border-radius: 20px;
+    margin-left: auto;
+    font-family: var(--ff-merriweather-regular);
+    font-size: 1.1em;
+    outline: none;
+    border-color: var(--color-black);
+}
+
+.app__login-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.app__login-btns button {
+    padding: 0.5rem;
+    min-width: 10vw;
+    height: 5vh;
+    color: var(--color-white);
+    background: var(--color-red);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: var(--ff-merriweather-regular);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.app__login-btns button:hover {
+    transform: scale(1.1);
+    color: var(--color-red);
+    background: var(--color-white);
+}
+
+.app__login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    border: 2px solid var(--color-blue);
+    cursor: pointer;
+    height: 5vh;
+    min-width: 10vw;
+    transition: all 0.4s ease-in;
+}
+
+.app__login-btn svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 0.5rem;
+}
+
+.app__login-btn span {
+    background: var(--color-blue);
+    color: var(--color-white);
+    height: 100%;
+    flex: 1;
+    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+    font-family: var(--ff-merriweather-regular);
+}
+
+.app__login-btn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(4px);
+        background: var(--color-red);
+    }
+    50% {
+        transform: translateX(-4px);
+        background: var(--color-white);
+    }
+    75% {
+        transform: translateX(4px);
+        background: var(--color-red);
+    }
+    100% {
+        transform: none;
+        background: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__login-tab span {
+        font-size: 1em;
+    }
+
+    .app__login-input label {
+        font-size: 0.75em;
+    }
+
+    .app__login-input input {
+        font-size: 0.75em;
+    }
+
+    .app__login-btns {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .app__login-btns button {
+        font-size: 0.75em;
+        width: 30vw;
+    }
+
+    .app__login-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .app__login-btn span {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .app__login {
+        width: 100%;
+        margin: 5rem 2rem;
+    }
+}
