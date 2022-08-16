@@ -6,7 +6,7 @@
     padding: 1.25rem;
     background: var(--color-purple-gradient);
     color: var(--color-pink);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .app__header-brand {
@@ -17,8 +17,6 @@
 .app__header-menu {
     display: flex;
     align-items: center;
-    font-family: var(--ff-ubuntu-bold);
-    font-size: 1.5em;
     padding: 0.75rem;
 }
 
@@ -27,6 +25,7 @@
     align-items: center;
     text-decoration: none;
     color: var(--color-pink);
+    margin: 0 0.75rem;
 }
 
 .app__header-item svg {
@@ -37,6 +36,8 @@
 .app__header-item span {
     margin: 0 0.5rem;
     cursor: pointer;
+    font-family: var(--ff-ubuntu-bold);
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 400px) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaHome } from 'react-icons/fa';
-import { MdLogin, MdLogout } from 'react-icons/md';
+import { MdLogin, MdLogout, MdOutlineNotStarted } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -22,10 +22,16 @@ const Header = () => {
         let checkUser = username?.length > 0 ? username : email;
         if(checkUser?.length) {
             return (
-                <div className="app__header-item" onClick={() => handleLogOut(checkUser)}>
-                    <MdLogout />
-                    <span>Logout</span>
-                </div>
+                <>
+                    <div className="app__header-item">
+                        <MdOutlineNotStarted />
+                        <span>Start Streaming</span>
+                    </div>
+                    <div className="app__header-item" onClick={() => handleLogOut(checkUser)}>
+                        <MdLogout />
+                        <span>Logout</span>
+                    </div>
+                </>
             );
         } else {
             return(
