@@ -23,10 +23,10 @@ const Header = () => {
         if(checkUser?.length) {
             return (
                 <>
-                    <div className="app__header-item">
+                    <Link to='/stream/create' className="app__header-item" >
                         <MdOutlineNotStarted />
-                        <span>Start Streaming</span>
-                    </div>
+                        <span>Stream</span>
+                    </Link>
                     <div className="app__header-item" onClick={() => handleLogOut(checkUser)}>
                         <MdLogout />
                         <span>Logout</span>
