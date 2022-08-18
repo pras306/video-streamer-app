@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 
 import userReducer from './features/User/UserSlice';
+import streamReducer from './features/Stream/StreamSlice';
 
 const authMiddleware = ({ getState }) => {
     return next => action => {
@@ -18,7 +19,8 @@ const loadState = () => {
 
 export const store = configureStore({
     reducer: {
-        user: userReducer
+        user: userReducer,
+        stream: streamReducer
     },
     preloadedState: loadState(),
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(authMiddleware)
