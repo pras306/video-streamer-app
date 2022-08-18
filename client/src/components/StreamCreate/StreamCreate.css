@@ -1,0 +1,94 @@
+.app__stream-create {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    padding: 1.5rem;
+    height: 35vh;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 4px var(--color-black);
+    font-family: var(--ff-ubuntu-medium);
+}
+
+.app__stream-create-title {
+    font-family: var(--ff-ubuntu-bold);
+    font-size: 1.5em;
+}
+
+.app__stream-create-input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.5rem;
+    padding: 1.25rem;
+    width: 100%;
+}
+
+.app__stream-create-input label {
+    font-size: 1.1em;
+}
+
+.app__stream-create-input input {
+    margin-left: auto;
+    width: 15vw;
+    padding: 0.75rem;
+    font-size: 1.1em;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid var(--color-black);
+    font-family: var(--ff-ubuntu-medium);
+}
+
+.app__stream-create-input input:focus {
+    border: 2px solid var(--color-red);
+}
+
+.app__stream-create-input input::placeholder {
+    font-family: var(--ff-ubuntu-medium);
+    color: var(--color-black);
+    opacity: 40%;
+}
+
+.app__stream-create-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app__stream-create-btns button {
+    padding: 0.75rem 1.25rem;
+    font-family: var(--ff-ubuntu-medium);
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--color-red);
+    color: var(--color-white);
+    transition: transform 0.4s ease-in-out;
+}
+
+.app__stream-create-btns button:hover {
+    transform: scale(1.1);
+    background: var(--color-white);
+    color: var(--color-red);
+}
+
+@keyframes shake {
+    25% {
+        transform: translateX(4px);
+        background: var(--color-red);
+    }
+    50% {
+        transform: translateX(-4px);
+        background: var(--color-white);
+    }
+    75% {
+        transform: translateX(4px);
+        background: var(--color-red);
+    }
+    100% {
+        transform: none;
+        background: none;
+    }
+}

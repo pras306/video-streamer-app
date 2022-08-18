@@ -1,0 +1,41 @@
+.app__stream-card,
+.app__stream-card-active {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--color-black);
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin: 0.75rem;
+    cursor: pointer;
+}
+
+.app__stream-card-active {
+    background: var(--color-rose);
+}
+
+.app__stream-card-title {
+    font-family: var(--ff-merriweather-black);
+    font-size: 2em;
+    color: var(--color-charcoal);
+    flex: 1;
+    text-transform: capitalize;
+}
+
+.app__stream-card-content {
+    font-family: var(--ff-merriweather-regular);
+    font-size: 1.2em;
+    color: var(--color-charcoal);
+    margin: 0 2.5rem;
+}
+
+.app__stream-card-flag {
+    padding: 0.75rem;
+    color: var(--color-charcoal);
+    font-family: var(--ff-merriweather-regular);
+    border-radius: 2rem;
+}
+
+.success {
+    background: var(--color-red);
+}
